@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Presupuestos</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>📄 Gestor de Presupuestos</h1>
+        <p>Para emprendedores paraguayos</p>
+    </header>
+
+    <div class="container">
+        <!-- Pestañas desktop -->
+        <div class="tabs desktop-tabs">
+            <button class="tab-btn active" data-tab="budgets">📄 Presupuestos</button>
+            <button class="tab-btn" data-tab="clients">👤 Clientes</button>
+            <button class="tab-btn" data-tab="products">📦 Productos</button>
+            <button class="tab-btn" data-tab="config">⚙️ Configuración</button>
+        </div>
+
+        <main class="main-content">
+            <section id="budgets" class="tab-content active"></section>
+            <section id="clients" class="tab-content"></section>
+            <section id="products" class="tab-content"></section>
+            <section id="config" class="tab-content"></section>
+        </main>
+    </div>
+
+    <!-- Menú móvil fijo -->
+    <nav class="mobile-nav">
+        <button class="tab-btn active" data-tab="budgets">📄</button>
+        <button class="tab-btn" data-tab="clients">👤</button>
+        <button class="tab-btn" data-tab="products">📦</button>
+        <button class="tab-btn" data-tab="config">⚙️</button>
+    </nav>
+
+    <script type="module" src="assets/script.js"></script>
+</body>
+</html>
